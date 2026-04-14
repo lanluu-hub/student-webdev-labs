@@ -1,32 +1,63 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-6" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 01 - Audit</title>
   </head>
   <body>
-    <form>
-      Name:<br />
-      <input type="text" name="name" /><br /><br />
-      Address:<br />
-      <input type="text" name="address" />
-      <br /><br />
-      City:<br />
-      <input type="text" name="city" />
-      <br /><br />
-      Zip Code:<br />
-      <input type="text" name="zip" />
-      <br /><br />
-      Credit Card Type:<br />
-      <input type="radio" name="card" value="visa" /> Visa<br />
-      <input type="radio" name="card" value="mastercard" /> MasterCard<br />
-      <input type="radio" name="card" value="amex" /> American Express<br /><br />
-      Credit Card Number:<br />
-      <input type="text" name="cc_number" /><br /><br />
-      CVV:<br />
-      <input type="text" name="cvv" /><br /><br />
-      <input type="button" value="Submit" />
-    </form>
+    <header>
+      <h1>Week 03 Exercise: 01-Audit</h1>
+    </header>
+    <main>
+      <form>
+        <div>
+          <!-- Name:<br /> -->
+          <label for="name">Name:</label> <br />
+          <input type="text" name="name" id="name" /><br /><br />
+        </div>
+        <div>
+          <!-- Address:<br /> -->
+          <label for="address">Address:</label> <br />
+          <input type="text" name="address" id="address" />
+          <br /><br />
+          <!-- City:<br /> -->
+          <label for="city">City:</label> <br />
+          <input type="text" name="city" id="city" />
+          <br /><br />
+          <!-- Zip Code:<br /> -->
+          <label for="zip">Zip Code:</label> <br />
+          <input type="text" name="zip" id="zip" />
+        </div>
+        <br /><br />
+        <fieldset>
+          <div>
+            <legend>Credit Card Type:</legend>
+            <br />
+            <!-- Credit Card Type:<br /> -->
+            <input type="radio" name="card" value="visa" id="card-visa" />
+            <label for="card-visa">Visa</label>
+            <br />
+            <input
+              type="radio"
+              name="card"
+              value="mastercard"
+              id="mastercard"
+            />
+            <label for="mastercard">Mastercard</label> <br />
+            <input type="radio" name="card" value="amex" id="amex" />
+            <label for="amex">American Express</label><br />
+          </div>
+          <br />
+          <!-- Credit Card Number:<br /> -->
+          <label for="cc_number">Credit Card Number:</label> <br />
+          <input type="text" name="cc_number" id="cc_number" /><br /><br />
+          <!-- CVV:<br /> -->
+          <label for="cvv">CVV:</label> <br />
+          <input type="text" name="cvv" id="cvv" /><br /><br />
+          <input type="button" value="Submit" />
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>
