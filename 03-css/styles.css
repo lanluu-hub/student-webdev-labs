@@ -1,0 +1,139 @@
+/* Add your CSS code here  */
+:root {
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Arial, sans-serif;
+  vertical-align: baseline;
+}
+
+nav,
+h1,
+h2 {
+  font-family: Cinzel;
+}
+
+.nav {
+  display: block;
+  background-color: var(--dark-slate-infinity);
+  width: 100%;
+  height: 56px;
+}
+
+.nav-list {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  /* justify-items: center; */
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-family: Cinzel;
+  color: var(--gothic-gray-blue);
+}
+
+.nav-item a:hover {
+  background-color: var(--ice-blue-juvie);
+  color: black;
+  border-radius: 2px;
+  border: none;
+}
+
+.title-header {
+  font-size: 5ch;
+  color: var(--gothic-gray-blue);
+  text-align: center;
+  margin: 40px 0;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.section-header {
+  font-size: 3ch;
+  color: var(--dark-slate-infinity);
+  font-weight: 700;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.book-series-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.book-list li {
+  margin-top: 2ch;
+}
+
+.book-list {
+  padding-left: 20px;
+}
+
+.book-covers {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.book-cover {
+  width: 259px;
+  height: 385px;
+  border-radius: 4px;
+}
+
+.book-cover:hover {
+  transform: scale(1.05);
+}
+
+.pov-table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pov-table td,
+.pov-table th {
+  padding: 16px;
+  border: 1px solid black;
+  vertical-align: middle;
+}
+
+.table-header {
+  background-color: #f2f2f2;
+  font-weight: 700;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-footer-row {
+  font-weight: 700;
+}
