@@ -188,3 +188,87 @@ a {
 }
 
 /* Exercise 04 - CSS Grid Areas */
+/* Default (mobile) */
+.grid-container-ex-04 {
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas:
+    "header"
+    "article"
+    "article"
+    "article"
+    "article"
+    "section"
+    "section"
+    "section"
+    "section"
+    "aside"
+    "footer";
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container-ex-04 .grid-item {
+  text-align: left;
+  border-radius: 5px;
+}
+
+.grid-container-ex-04 h1 {
+  display: none;
+}
+
+.header {
+  grid-area: header;
+}
+
+.article {
+  grid-area: article;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.section {
+  grid-area: section;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .grid-container-ex-04 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+      "header header header header"
+      "article article article aside"
+      "article article article aside"
+      "article article article aside"
+      "article article article aside"
+      "section section section section"
+      "section section section section"
+      "section section section section"
+      "footer footer footer footer";
+  }
+}
+
+/* laptop screen */
+@media (min-width: 1024px) {
+  .grid-container-ex-04 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+      "header header header header"
+      "aside article article article"
+      "aside article article article"
+      "aside article article article"
+      "aside article article article"
+      "section section section section"
+      "section section section section"
+      "section section section section"
+      "footer footer footer footer";
+  }
+}
