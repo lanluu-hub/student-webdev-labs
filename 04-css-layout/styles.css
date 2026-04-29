@@ -137,5 +137,54 @@ a {
 }
 
 /* Exercise 03 - CSS Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    "header header header"
+    "main main sidebar"
+    "main main sidebar"
+    "main main sidebar"
+    "main main sidebar"
+    "main main sidebar"
+    "subitem7 subitem4 subitem5"
+    "footer footer footer";
+  gap: 0.25rem;
+  padding: 0.25rem;
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: main;
+}
+
+.item3 {
+  grid-area: sidebar;
+}
+
+.item4 {
+  grid-area: subitem4;
+}
+
+.item5 {
+  grid-area: subitem5;
+}
+
+.item6 {
+  grid-area: subitem6;
+  display: none;
+}
+
+.item7 {
+  grid-area: subitem7;
+}
+
+.item8 {
+  grid-area: footer;
+}
 
 /* Exercise 04 - CSS Grid Areas */
