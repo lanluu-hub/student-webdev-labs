@@ -33,6 +33,11 @@ h1 {
   text-align: center;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Common styles for Flexbox and CSS Grid */
 .flex-item,
 .grid-item {
@@ -50,6 +55,86 @@ h1 {
 }
 
 /* Exercise 02 - Flexbox */
+.layout-flex {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+}
+
+.top-of-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: black;
+  padding: 0 1.5rem;
+  gap: 10px;
+}
+
+.top-of-page h1,
+a {
+  color: #fefefe;
+}
+
+.top-of-page h1 {
+  flex-grow: 2;
+  text-align: left;
+}
+
+.navigation {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation a:hover {
+  color: darkgreen;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* || main-area */
+.main-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 1.5rem auto;
+  padding: 0 1.5rem;
+  gap: 1rem;
+}
+
+.page-area {
+  flex: 1;
+  padding: 1.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.media {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.media span {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.bottom-of-page {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: center;
+  background: black;
+}
+
+.bottom-of-page span {
+  color: #fefefe;
+}
 
 /* Exercise 03 - CSS Grid */
 
